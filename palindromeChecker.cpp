@@ -10,8 +10,12 @@ bool isPalindrome(int num) {
 }
 
 int main() {
-    int number = 12321;
+    int number;
+    std::cout << "Enter a number: ";
+    std::cin >> number;
+
     bool result = isPalindrome(number);
+
     std::cout << "The number " << number << " is a palindrome: " << std::boolalpha << result << std::endl;
     return 0;
 }
